@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: serif;
+}
+section{
+    width: 30%;
+    margin: 10% 35%;
+    position: relative;
+    box-shadow:  0 -1em 3em rgba(0, 0 , 0, 0.2),
+    0 0 0 2px rgb(245, 245, 245),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+}
+.top{
+    background-color:rgb(193, 210, 241);
+    height: 100px;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+}
+.top i{
+    margin-top: 20px;
+}
+.top1{
+    color: white;
+    font-size: 20px;
+    margin-top: 11px;
+    text-align: center;
+    margin-left: 13%;
+}
+.task{
+    font-size: 20px;
+}
+.middle{
+    padding: 20px 30px;
+    margin-top: 0;
+}
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+}
+.tasks input{
+    width: 40px;
+}
+.add img{
+    width: 50px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+nav{
+    width: 40%;
+    height: 250px;
+    margin: 0 30%;
+    text-align: center;
+    padding: 40px 20px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    display: none;
+}
+.del{
+    text-decoration:line-through;
+    
+}
+.hidden{
+    display: block;
+}
+nav label{
+    font-size: 25px;
+    font-weight: 500;
+}
+nav input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(78, 86, 101);
+    font-size: 17px;
+}
+nav a{
+    font-size: 20px;
+    cursor: pointer;
+}
+nav a button{
+    width: 140px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    background-color:rgb(143, 177, 240);
+     border: none;
+     border-radius: 10px;
+    cursor: pointer;
+
+}
+@media screen and (max-width:800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        font-family: serif;
+    }
+    section{
+        width: 85%;
+        margin: 20% 7%;
+        box-shadow:  0 -1em 3em rgba(0, 0 , 0, 0.2),
+        0 0 0 2px rgb(245, 245, 245),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+    .top{
+        padding: 20px 20px;
+    }
+    .top i{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .top1{
+        margin-left: 12%;
+        margin-top: 0;
+        font-size: 17px;
+        width: 70%;
+    }
+    .add img{
+        margin-left: 75%;
+        width: 50px;
+    }
+    .middle{
+        padding: 20px 20px;
+    }
+    .tasks{
+        margin-bottom: 20px;
+    }
+    .one{
+        font-size: 20px;
+    }
+    .del{
+        text-decoration:line-through;
+    }
+    .hide{
+        display: none;
+    }
+    nav{
+        width: 85%;
+        height: 220px;
+        margin: 0 7%;
+        text-align: center;
+        padding: 40px 20px;
+        position: absolute;
+        top: 20%;
+        background-color: white;
+        display: none;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0 , 0, 0.3);
+    }
+    #open{
+        border: 1px solid rgb(143, 177, 240);
+        padding-left: 10px;
+        border-radius: 7px;
+    }
+    .hidden{
+        display: block;
+    }
+    nav label{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    nav input{
+        width: 90%;
+        height: 40px;
+        border: 1px solid rgb(78, 86, 101);
+        font-size: 17px;
+    }
+    nav a{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav a button{
+        width: 140px;
+        padding: 10px 15px;
+        font-size: 20px;
+        color: white;
+        background-color:rgb(143, 177, 240);
+         border: none;
+         border-radius: 10px;
+        cursor: pointer;
+    
+    }
+}
