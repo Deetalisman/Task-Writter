@@ -1,3 +1,5 @@
+
+//-----------show add task section---------------//
 const nav = document.querySelector('nav');
 const open = document.querySelector('.add img');
  open.addEventListener('click', () => {
@@ -8,19 +10,21 @@ const open = document.querySelector('.add img');
  
  let uList = document.querySelector('ul');
  let order = document.querySelector(".middle")
- console.log(order.length);
+ console.log(uList.length);
 const addTask = document.querySelector('#addtask');
-
+const err = document.querySelector("small");
+const addBox1 = document.querySelector('#open');
  addTask.addEventListener('click', function(e) {
    e.preventDefault();
-   
-
+   if(addBox1.value == ""){
+    err.innerHTML = "add task"
+   } else{
    // creating element
     const addBox = document.querySelector('#open').value;
     let list = document.createElement('li');
     let para = document.createElement('p');
     let radio = document.createElement('input');
-    radio.setAttribute("type","radio");
+    radio.setAttribute("type","checkbox");
 
     para.textContent = addBox;
 
@@ -32,52 +36,25 @@ const addTask = document.querySelector('#addtask');
     list.classList.add('tasks');
     para.classList.add('one');
 
-   list.addEventListener('click', function(e){
-      radio.checked = true;
+
+    const addBox1 = document.querySelector('#open');
+    addBox1.value = "";
+
+
+    //use radio to decorate line
+   radio.addEventListener('click', function(e){
       para.classList.toggle('del');
-
    });
+   //hide nav
    const nav = document.querySelector('nav');
-    nav.classList.remove('hidden');
- 
- });
-
-
- /*const myTask = document.querySelector('li');
- const one = document.querySelector('.one');
- myTask.addEventListener('click' , function(e){
-    one.classList.toggle('del');
-  });*/
-
- let list = document.querySelectorAll('li');
- list.forEach(list => {
-   list.addEventListener('click', function(e){
-          const one = document.querySelector('.one');
-
-   })
- });
-
-  function hide(){
-    
+    nav.classList.remove('hidden');  
   }
+   });
 
 
-
-//chack radio
-  function checktheradio(){
-   document.getElementById("two").checked = true;
-   const one = document.querySelector('.one');
-        one.classList.toggle('del');
-
-  };
-  
   ///date 
   let date = document.querySelector('.date');
   date.textContent = new Date();
 
-  function uncheck(){
-   radio.checked = false;
-   document.getElementById("two").checked = false;
 
-}
   

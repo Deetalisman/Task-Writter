@@ -75,6 +75,9 @@ nav{
 .hidden{
     display: block;
 }
+.hide{
+    display: none;
+}
 nav label{
     font-size: 25px;
     font-weight: 500;
@@ -98,7 +101,9 @@ nav a button{
      border: none;
      border-radius: 10px;
     cursor: pointer;
-
+}
+small{
+    color: red;
 }
 @media screen and (max-width:800px) {
     *{
