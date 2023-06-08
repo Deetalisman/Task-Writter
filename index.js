@@ -39,6 +39,8 @@ const addBox1 = document.querySelector('#open');
 
     const addBox1 = document.querySelector('#open');
     addBox1.value = "";
+    err.innerHTML = ""
+
 
 
     //use radio to decorate line
